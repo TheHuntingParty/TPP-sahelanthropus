@@ -1,0 +1,46 @@
+fileFormatVersion: 2
+guid: 98fddecd8d56f9e4eaf012c0a7a83443
+labels:
+- gntn
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: mainObject/gntn_door004_vrtn001
+    100002: mainObject/gntn_door004_vrtn001/0 - MESH_gntn_door004_vrtn001
+    100004: mainObject/gntn_door004_vrtn001/1 - MESH_gntn_door004_vrtn001
+    100006: mainObject/gntn_door004_vrtn001/2 - MESH_gntn_door004_vrtn001
+    100008: mainObject/gntn_door004_vrtn001/[Root]
+    400000: mainObject/gntn_door004_vrtn001/Transform
+    400002: mainObject/gntn_door004_vrtn001/0 - MESH_gntn_door004_vrtn001/Transform
+    400004: mainObject/gntn_door004_vrtn001/1 - MESH_gntn_door004_vrtn001/Transform
+    400006: mainObject/gntn_door004_vrtn001/2 - MESH_gntn_door004_vrtn001/Transform
+    400008: mainObject/gntn_door004_vrtn001/[Root]/Transform
+    2100000: Material 0
+    2100002: Material 1
+    2100004: Material 2
+    2800000: Texture 0
+    2800002: Texture 1
+    2800004: Texture 2
+    2800006: Texture 3
+    2800008: Texture 4
+    2800010: Texture 5
+    2800012: Texture 6
+    2800014: Texture 7
+    2800016: Texture 8
+    2800018: Texture 9
+    2800020: Texture 10
+    2800022: Texture 11
+    2800024: Texture 12
+    4300000: Mesh 0
+    4300002: Mesh 1
+    4300004: Mesh 2
+    6500000: mainObject/gntn_door004_vrtn001/[Root]/BoxCollider
+    11400000: mainObject/gntn_door004_vrtn001/MonoBehaviour-FmdlStudio.Scripts.MonoBehaviours.FoxModel
+    13700000: mainObject/gntn_door004_vrtn001/0 - MESH_gntn_door004_vrtn001/SkinnedMeshRenderer
+    13700002: mainObject/gntn_door004_vrtn001/1 - MESH_gntn_door004_vrtn001/SkinnedMeshRenderer
+    13700004: mainObject/gntn_door004_vrtn001/2 - MESH_gntn_door004_vrtn001/SkinnedMeshRenderer
+    100100000: mainObject
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: -1624499822, guid: df12be6795325964eb7bb6f8a0943bbb, type: 3}
