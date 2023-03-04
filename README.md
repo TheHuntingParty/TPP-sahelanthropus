@@ -15,7 +15,7 @@ Cause: Unknown, but probably NavMesh(.nav2) missing <br>
 --> The support heli (Pequod) was disabled (you can enable by removing the comments in enemy.lua) <br>
 --> Sahelanthropus Navmesh params are set as Human and he is using nav_sky mesh<br>
 
-Note: The map used to test sahe was made by me, there is some files that are not being used, if you want to removed them, be careful to not break anything.
+Note: The map used to test sahe was made by me, there is some files that are not being used, if you want to remove them, be careful to not break anything.
 <br>
     Unknown Route names were renamed to:<br>
     --> rts_sahe_0000 <br>
