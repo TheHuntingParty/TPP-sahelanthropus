@@ -1,6 +1,7 @@
 ### Sahelanthropus 
  Project: Attempt to implement Sahelanthropus in custom maps and new bossfights in existing ones.<br>
 
+![Sahelanthropus](/images/sahelan_0.png?raw=true)
 
 ## ⚠️ Current Status ⚠️
  Spawns but Non-functional (T-posing)<br>
