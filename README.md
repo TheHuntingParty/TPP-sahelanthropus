@@ -8,6 +8,7 @@
 Cause: Unknown, but probably NavMesh(.nav2) missing <br>
 
 ![Mantis](https://github.com/TheHuntingParty/TPP-sahelanthropus/blob/main/images/sahe_mantis.gif "Mantis Gif")
+<img src="https://github.com/TheHuntingParty/TPP-sahelanthropus/blob/main/images/sahe_mantis.gif" width="40" height="40" />
 
 ## 🔧 Content 🔧
 --> Contains an small area from my map that can be used to test Sahelanthropus and his behaviour, <br>
