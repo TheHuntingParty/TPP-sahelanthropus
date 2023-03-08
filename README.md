@@ -1,16 +1,11 @@
 ### Sahelanthropus 
  Project: Attempt to implement Sahelanthropus in custom maps and new bossfights in existing ones.<br>
-
-![Sahelanthropus](/images/sahelan_0.png?raw=true)
+![jump_0](https://github.com/TheHuntingParty/TPP-sahelanthropus/blob/main/images/sahe_jump_0.gif "Jump gif 0")
 
 ## ⚠️ Current Status ⚠️
  Functional<br>
- 
+ ![atck_0](https://github.com/TheHuntingParty/TPP-sahelanthropus/blob/main/images/sahe_atck_0.gif "atck")
 <br>
-<br>
-
-
-![jump_0](https://github.com/TheHuntingParty/TPP-sahelanthropus/blob/main/images/sahe_jump_0.gif "Jump gif 0")
 
 
 ## 🔧 Content 🔧
