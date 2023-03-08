@@ -7,6 +7,8 @@
  Spawns but Non-functional (T-posing)<br>
 Cause: Unknown, but probably NavMesh(.nav2) missing <br>
 
+![Mantis](/images/sahe_mantis.gif?raw=true)
+
 ## 🔧 Content 🔧
 --> Contains an small area from my map that can be used to test Sahelanthropus and his behaviour, <br>
 --> His routes were adapted to the area and the ones containing unknown names were renamed <br>
