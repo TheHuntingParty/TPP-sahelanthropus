@@ -4,8 +4,9 @@
 ![Sahelanthropus](/images/sahelan_0.png?raw=true)
 
 ## ⚠️ Current Status ⚠️
- Spawns but Non-functional (T-posing)<br>
-Cause: Unknown, but probably NavMesh(.nav2) missing <br>
+ Functional<br>
+ 
+<br>
 <br>
 
 
@@ -13,14 +14,14 @@ Cause: Unknown, but probably NavMesh(.nav2) missing <br>
 
 
 ## 🔧 Content 🔧
---> Contains an small area from my map that can be used to test Sahelanthropus and his behaviour, <br>
+--> Contains an small area that can be used to test Sahelanthropus and his behaviour, <br>
 --> His routes were adapted to the area and the ones containing unknown names were renamed <br>
 --> I removed the Demos from the mission <br> 
 --> The background music and some radio call were removed <br>
---> The support heli (Pequod) was disabled (you can enable by removing the comments in enemy.lua) <br>
---> Sahelanthropus Navmesh params are set as Human and he is using nav_sky mesh<br>
+--> Sahelanthropus is using nav_sky Navmesh<br>
 
-Note: The map used to test sahe was made by me, there is some files that are not being used, if you want to remove them, be careful to not break anything.
+![rex_0](/images/sahe_rex_0.png?raw=true)
+
 <br>
     Unknown Route names were renamed to:<br>
     --> rts_sahe_0000 <br>
