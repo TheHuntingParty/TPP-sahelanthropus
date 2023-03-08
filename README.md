@@ -14,11 +14,7 @@
 
 
 ## 🔧 Content 🔧
---> Contains an small area that can be used to test Sahelanthropus and his behaviour, <br>
---> His routes were adapted to the area and the ones containing unknown names were renamed <br>
---> I removed the Demos from the mission <br> 
---> The background music and some radio call were removed <br>
---> Sahelanthropus is using nav_sky Navmesh<br>
+---> Contains an small area that can be used to test Sahelanthropus and his behaviour, <br>
 
 ![rex_0](/images/sahe_rex_0.png?raw=true)
 
