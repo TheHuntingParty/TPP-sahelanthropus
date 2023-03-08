@@ -2,8 +2,8 @@
  Project: Attempt to implement Sahelanthropus in custom maps and new bossfights in existing ones.<br>
 ![jump_0](https://github.com/TheHuntingParty/TPP-sahelanthropus/blob/main/images/sahe_jump_0.gif "Jump gif 0")
 
-## ⚠️ Current Status ⚠️
- Functional<br>
+## ⚠️ Current Status: Functional ⚠️
+ 
  ![rex_0](/images/sahe_rex_0.png?raw=true)
 <br>
 
