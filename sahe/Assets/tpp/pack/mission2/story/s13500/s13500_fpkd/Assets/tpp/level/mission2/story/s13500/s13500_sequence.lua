@@ -720,89 +720,6 @@ this.KillAiSahelan = function()
 end
 
 
-
-
-
-
-
-
-sequences.Seq_Demo_SahelanAppearance = {
-	Messages = function( self ) 
-		return
-		StrCode32Table {
-			UI = {
-				{
-					
-					msg = "StartMissionTelopFadeOut",
-					func = function ()
-						Fox.Log("!!!!!!!!!!!!!!!!! s13500_sequence: StartMissionTelopFadeOut !!!!!!!!!!!!!!!")
-						self.OnEndMissionTelop()
-						
-						
-						TppUI.ShowAccessIcon()
-					end
-				},
-			},
-			Demo = {
-				{
-					msg = "Play",
-					func = function()
-						Fox.Log( "_________s13500_sequence.Messages(): Demo: Play" )
-						
-						TppUI.HideAccessIcon()
-					end,
-					option = {
-						isExecDemoPlaying = true,
-					},
-				},
-				{
-					msg = "BattleFx_on",
-					func = function()
-						Fox.Log( "_________s10151_sequence.Messages(): Demo: BattleFx_on" )
-
-
-						
-						this.CreateEffectSmoke(true)
-					end,
-					option = {
-						isExecDemoPlaying = true,
-						isExecMissionClear = true,
-					},
-				},
-				nil
-			},
-
-			nil
-		}
-	end,
-
-	OnEnter = function()
-		
-		TppUI.StartMissionTelop()
-	end,
-
-	OnLeave = function ()
-		
-		TppMission.UpdateCheckPoint{
-			checkPoint = "CHK_BattleSahelan",
-			ignoreAlert = true,
-		}
-		
-		
-	end,
-
-	OnEndMissionTelop = function()
-		
-		local funcs = function()
-			TppSequence.SetNextSequence( "Seq_Game_BattleSahelan" )
-		end
-		s13500_demo.SahelanAppearance( funcs )
-	end,
-
-}
-
-
-
 sequences.Seq_Game_BattleSahelan = {
 
 	Messages = function( self ) 
@@ -1022,8 +939,8 @@ sequences.Seq_Game_BattleSahelan = {
 					func = function ()
 						Fox.Log("______________s10151_sequence.Seq_Game_BattleSahelan.Messages FadeOutTimer________________")
 						
-						TppUI.SetFadeColorToWhite()
-						TppUI.FadeOut(0.2)
+					--	TppUI.SetFadeColorToWhite()
+					--	TppUI.FadeOut(0.2)
 					end,
 					option = { isExecMissionClear = true }
 				},
