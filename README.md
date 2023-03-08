@@ -4,14 +4,12 @@
 
 ## ⚠️ Current Status ⚠️
  Functional<br>
- ![atck_0](https://github.com/TheHuntingParty/TPP-sahelanthropus/blob/main/images/sahe_atck_0.gif "atck")
+ ![rex_0](/images/sahe_rex_0.png?raw=true)
 <br>
 
 
 ## 🔧 Content 🔧
 ---> Contains an small area that can be used to test Sahelanthropus and his behaviour, <br>
-
-![rex_0](/images/sahe_rex_0.png?raw=true)
 
 <br>
     Unknown Route names were renamed to:<br>
