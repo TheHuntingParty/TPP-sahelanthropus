@@ -6,6 +6,8 @@
 ## ⚠️ Current Status ⚠️
  Spawns but Non-functional (T-posing)<br>
 Cause: Unknown, but probably NavMesh(.nav2) missing <br>
+<br>
+
 
 ![Mantis](https://github.com/TheHuntingParty/TPP-sahelanthropus/blob/main/images/sahe_mantis.gif "Mantis Gif")
 
