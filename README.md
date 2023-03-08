@@ -22,4 +22,4 @@
     --> rts_sahe_0006 <br>
     --> rts_sahe_0007 <br>
 <br> 
-I will provide more info about him and his behaviour soon.
+More Info about him can be found at the [Wiki Link](https://metalgearmodding.fandom.com/wiki/Category:Lua "WIKI")
