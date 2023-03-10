@@ -12,7 +12,7 @@ local this={
     end,
 
      
-	missionGuaranteeGMP=8000000, -- GMP received after completing the mission
+	missionGuaranteeGMP=20000000, -- GMP received after completing the mission
 
 	lzInfo={
         -- LZ name from .fox2

@@ -191,12 +191,7 @@ function this.RegiserMissionSystemCallback()
 	
 	local systemCallbackTable ={
 
-		OnEstablishMissionClear = this.ReserveMissionClear,
-		OnEndMissionCredit = this.ReserveMissionClear,
-		OnEndMissionReward = this.ReserveMissionClear,
 
-		OnGameOver = this.OnGameOver,
-		nil
 	}
 	
 	TppMission.RegiserMissionSystemCallback(systemCallbackTable)
@@ -246,7 +241,7 @@ end
 this.OnEndMissionReward = function()
 	local missionName = TppMission.GetMissionName()
 	
-	if missionName ~= "s13501" then	
+	if missionName ~= "s13500" then	
 		TppMission.MissionFinalize()	
 
 	end
@@ -256,14 +251,14 @@ function this.ReserveMissionClear()
 
 	local missionName = TppMission.GetMissionName()
 	if missionName == "s13500" then
-		TppMission.ReserveMissionClear{
+		TppMission.ReserveMissionClear{ -- define the location after finishing here, not ON_FOOT function, that one does not work because the game detects the player leaving by heli
 			missionClearType = TppDefine.MISSION_CLEAR_TYPE.RIDE_ON_HELICOPTER,
-			nextMissionId = TppDefine.SYS_MISSION_ID.MTBS_FREE
+			nextMissionId = TppDefine.SYS_MISSION_ID.AFGH_HELI --MTBS_FREE
 		}
 	else
 		
 		TppMission.ReserveMissionClear{
-			missionClearType = TppDefine.TppDefine.MISSION_CLEAR_TYPE.ON_FOOT,
+			missionClearType = TppDefine.MISSION_CLEAR_TYPE.ON_FOOT,
 			nextMissionId = TppDefine.SYS_MISSION_ID.AFGH_HELI
 		}
 	end
@@ -824,6 +819,7 @@ sequences.Seq_Game_BattleSahelan = {
 		
 		local missionName = TppMission.GetMissionName()
 		if missionName == "s13500" then	
+			--i have to see what this does / default = true
 			mvars.isNormal = true
 		end
 		
@@ -847,7 +843,7 @@ sequences.Seq_Game_BattleSahelan = {
 		
 		TppSound.SetSceneBGM( "bgm_sahelan_02")
 		
-		TppMusicManager.PostSceneSwitchEvent( "Set_Switch_bgm_s13500_normal" )
+		TppMusicManager.PostSceneSwitchEvent( "Set_Switch_bgm_s10151_normal" )
 
 
 		this.UpdateObjectives("MissionStart")
@@ -901,7 +897,9 @@ sequences.Seq_Game_BattleSahelan = {
 		this.UpdateObjectives("BreakSahelan")
 
 		
-		TppMission.CanMissionClear()
+	--	TppMission.CanMissionClear()
+
+	this.ReserveMissionClear()
 		
 		
 	

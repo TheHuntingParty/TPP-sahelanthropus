@@ -8,9 +8,9 @@ this.requires = {}
 
 
 
+--Normal mode (TYPE OKB = 1)
 
-
-local SAHELAN_MAX_LIFE = 23000*1.5 
+local SAHELAN_MAX_LIFE = 23000*1.5   -- Default: 23000*1.5
 
 
 
@@ -28,7 +28,7 @@ this.sahelanLifeTable = {
 	RGun	=	1200,	
 	Ldr 	=	840,	
 	Tnk		=	840,	
-	Shield 	=	SAHELAN_MAX_LIFE * 0,	
+	Shield 	=	SAHELAN_MAX_LIFE * 0,	-- default: SAHELAN_MAX_LIFE * 0 / cant trigger the shield
 	PTLF 	=	96, 
 	PTRF 	=	96,
 	PTLB 	=	96,
@@ -36,13 +36,15 @@ this.sahelanLifeTable = {
 }
 
 
-local SAHELAN_MAX_LIFE_EX = 44880 
+--extreme mode (TYPE OKB = 2)
+
+local SAHELAN_MAX_LIFE_EX = 444880 
 
 
 
 this.sahelanLifeTableEx = {
 	
-	Body 	=	12000,	
+	Body 	=	12000,	-- Default value  12000
 	Bp 		=	900,	
 	Head 	=	3500,	
 	ArmR 	=	900,	
@@ -69,13 +71,15 @@ this.sahelanLifeTableEx = {
 
 
 this.SetUpSahelan = function()
-
+	-- 1= Normal 
+	-- 2= extreme
+	
 	local TYPE_OKB = 1 
 	
 	local missionName = TppMission.GetMissionName()
-	if missionName == "s13500" then	
-		TYPE_OKB = 2
-	end
+	--if missionName == "s13500" then	
+	--	TYPE_OKB = 2
+	--end
 	
 	local gameObjectId = {type="TppSahelan2", group=0, index=0}
 	local command = {
@@ -83,6 +87,18 @@ this.SetUpSahelan = function()
 		index = TYPE_OKB, 
 	}
 	GameObject.SendCommand( gameObjectId, command )
+	-- ORIGINAL FUNCTION
+	--if mvars.isNormal then
+	--	this.SetSahelanLife(SAHELAN_MAX_LIFE)
+	--	this.SetSahelanPartsLife(this.sahelanLifeTable)
+	--else
+	--	this.SetSahelanLife(SAHELAN_MAX_LIFE_EX)
+	--	this.SetSahelanPartsLife(this.sahelanLifeTableEx)
+	--	
+	--	local gameObjectId = {type="TppSahelan2", group=0, index=0}
+	--	local command = { id = "SetCombatGrade", defenseValue=60000, defenseValueForWeakPoint=20000, offenseGrade=6, defenseGrade=2 }
+	--	GameObject.SendCommand(gameObjectId, command)
+	--end
 
 	if mvars.isNormal then
 		this.SetSahelanLife(SAHELAN_MAX_LIFE)
@@ -95,6 +111,8 @@ this.SetUpSahelan = function()
 		local command = { id = "SetCombatGrade", defenseValue=60000, defenseValueForWeakPoint=20000, offenseGrade=6, defenseGrade=2 }
 		GameObject.SendCommand(gameObjectId, command)
 	end
+
+
 	
 	
 	local command = {id="SetBaseRoute", route="rts_shln_b_1000"} -- Base Route for sahe
